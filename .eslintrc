@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "env": {
+    "jest": true,
+    "es2021": true,
+    "node": true,
+    "react-native/react-native": true
+  },
+  "extends": [
+    "@react-native-community",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "import/ignore": [0, "react-native"]
+  }
+}
