@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
-import {NavigationContainer} from '@react-navigation/native';
+import AppNavigationContainer from "@navigation/index";
 
 export default () => {
-  return <NavigationContainer></NavigationContainer>;
+  return <AppNavigationContainer/>;
 };

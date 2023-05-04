@@ -1,7 +1,9 @@
 import {NavigationContainer} from '@react-navigation/native';
-import RootStack from './RootStack';
+import BottomStack from './BottomStack';
 export default () => {
-  <NavigationContainer>
-    <RootStack />
-  </NavigationContainer>;
+  return (
+    <NavigationContainer>
+      <BottomStack />
+    </NavigationContainer>
+  );
 };
