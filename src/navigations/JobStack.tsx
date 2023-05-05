@@ -4,13 +4,10 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {JobDetailScreen, JobListScreen} from '@screens';
 
-import type {StackNavigationOptions} from '@react-navigation/stack';
+import type {StackScreenProps} from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
-const HeaderBar: StackNavigationOptions['header'] = props => {
-  const {} = props;
-  return <View></View>;
-};
+
 const RootStack = () => {
   return (
     <Stack.Navigator
@@ -41,3 +38,13 @@ const RootStack = () => {
 };
 
 export default RootStack;
+type RootStackParamList = {
+  JobList: undefined;
+  JobDetail: {id: number};
+};
+
+export type JobStackListProps = StackScreenProps<RootStackParamList, 'JobList'>;
+export type JobStackDetailProps = StackScreenProps<
+  RootStackParamList,
+  'JobDetail'
+>;

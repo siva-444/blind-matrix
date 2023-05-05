@@ -3,18 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@navigation/*": [
-        "navigations/*"
-      ],
-      "@navigations": [
-        "navigations/index"
-      ],
-      "@screen/*": [
-        "screens/*"
-      ],
-      "@screens": [
-        "screens/index"
-      ],
+      "@navigation/*": ["navigations/*"],
+      "@navigations": ["navigations/index"],
+      "@screen/*": ["screens/*"],
+      "@screens": ["screens/index"],
+      "@app-type/*": ["types/*"],
+      "@app-types": ["types/index"]
     }
   }
 }
